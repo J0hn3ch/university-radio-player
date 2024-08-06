@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.universome.controller.RegisterController">
+   <children>
+      <VBox fx:id="registrationBox" layoutX="166.0" layoutY="31.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo-universome-cutted.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nameField" prefHeight="38.0" prefWidth="260.0" promptText="Nome" />
+            <TextField fx:id="surnameField" prefHeight="38.0" prefWidth="260.0" promptText="Cognome" />
+            <TextField fx:id="emailField" prefHeight="38.0" prefWidth="260.0" promptText="Email" />
+            <TextField fx:id="passwordField" prefHeight="38.0" prefWidth="260.0" promptText="Password" />
+            <HBox>
+               <children>
+                  <Hyperlink fx:id="loginLink" prefHeight="38.0" prefWidth="175.0" text="Sei già registrato?&#10;Accedi&#10;" />
+                  <JFXButton fx:id="registerBtn" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #ff9e22;" text="Registrati" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="adviceLabel" layoutX="170.0" layoutY="352.0" prefHeight="16.0" prefWidth="260.0" textFill="#bd290b" />
+   </children>
+</AnchorPane>

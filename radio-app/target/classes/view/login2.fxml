@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.universome.controller.LoginController2">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="268.0" layoutX="166.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo-universome-cutted.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="anonBtn" focusTraversable="false" layoutX="95.0" layoutY="188.0" onAction="#anonLogin" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #ff9e22;" text="Anonymous" textFill="WHITE" />
+      <JFXButton fx:id="listenerBtn" focusTraversable="false" layoutX="244.0" layoutY="188.0" onAction="#listenerLogin" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #ff9e22;" text="Listener" textFill="WHITE" />
+      <JFXButton fx:id="speakerBtn" focusTraversable="false" layoutX="387.0" layoutY="188.0" onAction="#speakerLogin" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #ff9e22;" text="Speaker" textFill="WHITE" />
+   </children>
+</AnchorPane>

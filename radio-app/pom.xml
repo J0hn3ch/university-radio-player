@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>eu.universome</groupId>
+  <artifactId>radio-app</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.5.3</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.13.2</version>
+  	</dependency>
+  	<!-- OpenJFX / JavaFX -->
+  	<!-- JavaFX Controls - https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
+	<dependency>
+	    <groupId>org.openjfx</groupId>
+	    <artifactId>javafx-controls</artifactId>
+	    <version>16</version>
+	</dependency>
+	<!-- JavaFX FXML - https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
+	<dependency>
+	    <groupId>org.openjfx</groupId>
+	    <artifactId>javafx-fxml</artifactId>
+	    <version>16</version>
+	</dependency>
+	<!-- JavaFX Media - https://mvnrepository.com/artifact/org.openjfx/javafx-media -->
+	<dependency>
+		<groupId>org.openjfx</groupId>
+		<artifactId>javafx-media</artifactId>
+		<version>16</version>
+    </dependency>
+	<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-maven-plugin -->
+	<dependency>
+	    <groupId>org.openjfx</groupId>
+	    <artifactId>javafx-maven-plugin</artifactId>
+	    <version>0.0.6</version>
+	</dependency>
+	<!-- Spring Boot WebFlux -->
+	<dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+		<groupId>io.projectreactor</groupId>
+		<artifactId>reactor-test</artifactId>
+		<scope>test</scope>
+	</dependency>
+	
+	<!-- JFoenix for User UX/UI  -->
+	<dependency>
+    	<groupId>com.jfoenix</groupId>
+    	<artifactId>jfoenix</artifactId>
+    	<version>9.0.10</version>
+	</dependency>
+  	<dependency>
+    	<groupId>com.gluonhq</groupId>
+    	<artifactId>charm-glisten</artifactId>
+    	<version>6.0.2</version>
+  	</dependency>
+  </dependencies>
+  <!-- https://stackoverflow.com/questions/60316594/adding-gluon-ui-library-to-a-javafx-desktop-application -->
+  <repositories>
+  	<repository>
+  		<id>charm-glisten</id>
+  		<name>charm-glisten Repository</name>
+  		<url>https://nexus.gluonhq.com/nexus/content/repositories/releases/</url>
+  		<layout>default</layout>
+  	</repository>
+  </repositories>
+  
+  <build>
+  	<plugins>
+  		
+  		<plugin>
+  			<groupId>org.openjfx</groupId>
+  			<artifactId>javafx-maven-plugin</artifactId>
+  			<version>0.0.6</version>
+  			<configuration>
+  				<mainClass>eu.universome.radio.App</mainClass>
+  			</configuration>
+  		</plugin>
+  		
+  		<plugin>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-maven-plugin</artifactId>
+      	</plugin>
+  	</plugins>
+  </build>
+</project>

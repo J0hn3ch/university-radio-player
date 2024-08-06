@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.universome.controller.AddItemController">
+   <children>
+      <VBox layoutX="166.0" layoutY="31.0" spacing="10.0">
+         <children>
+            <Label fx:id="itemLabel" prefHeight="45.0" prefWidth="247.0" text="Elemento">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="attr1Field" prefHeight="38.0" prefWidth="260.0" promptText="Attributo 1" />
+            <TextField fx:id="attr2Field" prefHeight="38.0" prefWidth="260.0" promptText="Attributo 2" />
+            <TextField fx:id="attr3Field" prefHeight="38.0" prefWidth="260.0" promptText="Attributo 3" />
+            <TextField fx:id="attr4Field" prefHeight="38.0" prefWidth="260.0" promptText="Attributo 4" />
+            <HBox>
+               <children>
+                  <JFXButton fx:id="addBtn" onAction="#addItem" prefHeight="38.0" prefWidth="265.0" style="-fx-background-color: #ff9e22;" text="Aggiungi" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

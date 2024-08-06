@@ -1,0 +1,39 @@
+.white-background {
+	-fx-background-color: #ffffff;
+}
+
+.transparent {
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.bg-image {
+	-fx-background-image: url("../img/passconme-620x.jpg");
+}
+
+/** Header **/
+.header-container {
+	-fx-background-color: white;
+	-fx-border-width: 0px;
+	-fx-border-color: #C1C1C1;
+	-fx-background-radius: 0px 0px 30px 30px;
+}
+
+/** Scroll Pane **/
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.shadow {
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.media-item {
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 10px;
+}
+
+/** Search **/
+.round-layout {
+	-fx-border-radius: 50;
+	-fx-border-color: #D7D7D7;
+}

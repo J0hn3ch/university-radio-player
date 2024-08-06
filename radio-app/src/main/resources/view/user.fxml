@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="40.0" prefWidth="140.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Hyperlink fx:id="loginLink" prefHeight="40.0" prefWidth="140.0" text="Admin" textFill="#dda53e">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/assets/ic_launcher/res/mipmap-mdpi/ic_launcher.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+   </children>
+</AnchorPane>

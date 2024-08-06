@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="episodeBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#switchToPlay" prefHeight="120.0" prefWidth="788.0" styleClass="white-background" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.universome.controller.EpisodeController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="110.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Scaricati/gazzoli-640x334.jpg" />
+         </image>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="100.0" prefWidth="571.0">
+         <children>
+            <HBox>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="titleLabel" prefHeight="20.0" prefWidth="716.0" text="Titolo episodio">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departmentLabel" prefHeight="16.0" prefWidth="341.0" text="Guest" textAlignment="RIGHT" />
+               </children>
+            </HBox>
+            <Label fx:id="descriptionLabel" alignment="TOP_LEFT" prefHeight="59.0" prefWidth="491.0" text="Descrizione del programma, argomenti trattati" />
+            <HBox prefHeight="23.0" prefWidth="429.0">
+               <children>
+                  <Label fx:id="speakerLabel" prefHeight="16.0" prefWidth="444.0" text="Con Gianluca Gazzoli" textAlignment="RIGHT" />
+                  <Label fx:id="dateLabel" text="1 Settembre 2021" />
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </VBox>
+      <Button fx:id="itemBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="48.0" styleClass="transparent" stylesheets="@../css/style.css">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/assets/ic_keyboard_arrow_right/res/drawable-xhdpi/ic_keyboard_arrow_right.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D height="40.0" minX="10.0" minY="10.0" width="40.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</HBox>

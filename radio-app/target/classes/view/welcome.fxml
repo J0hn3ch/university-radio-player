@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" prefHeight="503.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.universome.radio.gui.welcome.WelcomeController">
+   <children>
+      <ImageView fitHeight="262.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo-radio.png" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Radio degli studenti Unime" StackPane.alignment="BOTTOM_CENTER">
+         <StackPane.margin>
+            <Insets bottom="50.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="Ubuntu Medium" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="progress" text="Label" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="50.0" />
+         </StackPane.margin>
+      </Label>
+   </children>
+</StackPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="292.0" prefWidth="790.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.universome.controller.PlayerController">
+   <children>
+      <HBox alignment="CENTER" layoutX="82.0" layoutY="20.0" prefHeight="252.0" prefWidth="627.0" stylesheets="@../css/style.css" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox prefHeight="247.0" prefWidth="550.0" style="-fx-background-color: pink;" styleClass="bg-image" stylesheets="@../css/style.css">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="550.0">
+                     <children>
+                        <Label fx:id="titleLabel" text="Passeggia con me" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="speakerLabel" text="Giuseppe Cannistra | Martina Galletta" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="143.0" prefWidth="550.0" />
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="47.0" prefWidth="550.0">
+                     <children>
+                        <Slider prefHeight="16.0" prefWidth="568.0" />
+                        <HBox alignment="CENTER" prefHeight="34.0" prefWidth="600.0" spacing="5.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Prev" />
+                              <Button fx:id="playBtn" mnemonicParsing="false" text="Play / Pause" />
+                              <Button mnemonicParsing="false" text="Next" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
